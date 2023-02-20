@@ -1,0 +1,55 @@
+INSERT INTO book (bookISBN, bookPrice, bookName, bookDesc, bookGenre, bookRating, bookPublishedYear, bookCopiesSold, publisherId, authorFirst, authorMid, authorLast) VALUES
+
+(9780132350884, 41.86,'Clean Code: A Handbook of Agile Software Craftsmanship', 
+'A book that will instill within you the values of software craftsman, 
+and make you a better programmer―but only if you work at it.',Robert C. Martin, 'Education', 4, 2008, 1, 1(Pearson), 'Robert', 'Chris', 'Martin'),
+
+(1788624068, 51.98, 'Software Architect's Handbook','A comprehensive guide to exploring software 
+architecture concepts and implementing best practices', 'Education', 5, 2018, 1, 2(Packt Publishing), 'Joseph', null, 'Ingeno'),
+
+(1786384937, 34.95, 'How to Build a Balanced Investment Portfolio', 'A guide on how to manage your personal finance',
+'Neil Johnson'),'Finance', 3, 2014, 1, 3(Jackson Publishing)),
+
+(3546296879, 76.73, 'Falling in Love','A couple rekindle their romance yet again...', 'James Stanley', 'Romance', 5, 2011, 1, 4(Hewwit Publishers)),
+
+(1256738570, 54.89, 'How to cook like a Michelin Star Chef', 'Discover secret recipes to elevate your cooking.', 'Bobby Flay', 'Food', 5, 2020, 1, 5(Cooking Publishing)),
+
+(9873746445, 23.67, 'Never expected this', 'Romance novel where two unexpected lovers gain each other love', 'Lindon Gordon', 'Romance', 4, 2009, 1, 4(Hewwit Publishers)),
+
+(3435289007, 15.99, 'Favorite of Ma's Recipes', 'My grandmas favorite family recipes!', 'Matt Jonesy', 'Food', 4, 2022, 1, 6(FFoods Publishers)),
+
+(9893289237, 78.98, 'Programming in C', 'Learn the fundamentals of C programming.', 'Elliot Goodwill', 'Education', 4, 2002, 1, 1(Pearson)),
+
+(9845635472, 90.67, 'LOVE YOU!', 'A guide of how to love your partner.','Ryan Gosling', 'Romance', 5, 2013, 1, 7(Lovers Ink)),
+
+(5464834683, 78.37, 'How to build an SQL database', 'Learn SQL Databse fundamentals.', 'Education',4, 2018,1, 9(Data Publishers)),
+
+(6968934792, 92.63, 'Regret to love', 'A heartbreak story of adultery','Romance', 3, 2019,1,7(Lovers Ink)
+
+(9247468233, 56.89, 'Black Holes and the Universe', 'Discovers the basics of our universe.', 'Education',5, 2011, 1, 9(Data Publishers)),
+
+(8748576826, 34.98, 'Biography of Neil Armstrong', 'Biography of first man on the moon.', 'Biography',5, 2012,1,10(Influential Publishers)),
+
+(6487562382, 23.90, 'Founder of McDonalds','How Ray Kroc started it all.', 'Biography', 4, 2010, 1,11(Prodential Publishing Co.)),
+
+(8734682354, 35.56, 'How to retire at 40','Finance advice to help individuals retire young.', 'Finance', 5, 2018, 1, 8(Money Markets Publishing)),
+
+(4265462782, 39.99, 'Rich Dad Poor Dad','Mental differences between poor and rick individuals.', 'Finance',5, 2023, 1,3(Jackson Publishing)),
+
+(9292777282, 40.98, 'Capitals Gains', 'How to invest in the stock market.', 'Finance',4, 2020, 1,3(Jackson Publishing)),
+
+(7267354222, 11.34, 'How to climb Everest', 'How to prepare for the hardest climb of your life.', 'Adventure',3, 2003, 1,12(Lets Go Publishing)),
+
+(8458823856, 14.95, 'Adventures in the Amazon Rain Forest','Nonstop rain, you ready for it!','Adventure',5, 2009, 1, 13(Adventure Publishers)),
+
+(7823764825, 153.78, 'Going to Space','How its like when up in space.','Adventure',3, 2008, 1, 12(Lets Go Publishing)),
+
+(9387684263, 200.90, 'Best places to travel in Europe','Hot tourists spots in Europe.','Travel',5, 2007, 1,13(Travel Pubs)),
+
+(8237548282, 178.00, 'Best places to travel in the US','Hot tourists spots in the US.','Travel',4, 2001, 1,14(Traveling Publishers)),
+
+(7235472342, 156.00, 'Basketball Fundamentals','Rules within the game of basketball.','Sports',3, 2009, 1, 15(Sports Publishing Company)),
+
+(5353537884, 16.76, 'Lebron vs Jordan Explained','Sports analysts explain who is better.','Sports',4, 2010,1,15(Sports Publishing Company)),
+
+(8373777392, 35.65, 'Biggest Sports Comebacks', 'The biggest comebacks in all major sports.','Sports', 5, 2009,1,16(Almighty Sports));
