@@ -1,0 +1,27 @@
+INSERT INTO author (author_id,authorFirst,authorMidInit, authorLast,authorBio,PublisherName);
+
+1. (00001, 'Robert' , 'Chris' , 'Martin', null, Inc., null, 'Pearson');
+2. (00002, 'Joseph' , null , 'Ingeno', null, 'Packt Publishing');
+3. (00003, 'Neil' , null , 'Johnson', null, 'Jackson Publishing');
+4. (00004, 'James', null, 'Stanley',  null, 'Hewwit Publishers');
+5. (00005, 'Bobby', null, 'Flay', null, 'Cooking Publishing');
+6. (00006, 'Lindon',null, 'Gordon', null, 'Hewwit Publishing');
+7. (00007, 'Matt', null, 'Jonesy', null, 'FFoods Publishers");
+8. (00008, 'Elliot', null, 'Goodwill', null, 'Pearson');
+9. (00009, 'Ryan', null, 'Gosling', null, 'Lovers Ink');
+10.(00010, 'Bob', 'Bones', 'Jones', null, 'Data Publishers');
+11.(00011, 'Joyce', null, 'Ferrel', null, 'Lovers Ink');
+12.(00012, 'Dillon', 'Hector', 'Reciever', null, 'Data Publishers');
+13.(00013, 'Neil', null, 'Armstrong', null, 'Influential Publishers');
+14.(00014, 'Ryan, null, 'Alfaro', null, 'Prodential Publishing Co.');
+15.(00015, 'George', 'Grason', 'Mason', null, 'Money Markets Publishing');
+16.(00016, 'Jasmine', 'Beaumont', 'Lilly', null, 'Jackson Publishing');
+17.(00017, 'David', null, 'Karl', null, 'Jackson Publishing');
+18.(00018, 'Ramond', null, 'Isaic', null, 'Lets Go Publishing');
+19.(00019, 'Vanessa', 'Diamond', 'Tamori', null, 'Lets Go Publishing');
+20.(00020, 'Gabriela', null, 'Day', null, 'Adventure Publishers');
+21.(00021, 'Utrid', null, Ragnarsson, null, 'Lets Go Publishing');
+22.(00022, 'Omar, null, Postre, null, 'Almighty Sports');
+23.(00023, 'Hector', 'Tomoy', 'Kim', 'Traveling Publishers');
+24.(00024, 'Taylor', null, 'Lizz', 'Sports Publishing Company');
+25.(00025, 'Jessica', null, 'Ports Publishing Company');
