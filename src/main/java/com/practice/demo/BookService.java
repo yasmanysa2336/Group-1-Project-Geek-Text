@@ -3,8 +3,6 @@ package com.practice.demo;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.practice.demo.BookEntity;
-import com.practice.demo.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,5 +22,11 @@ public class BookService {
         List<BookEntity> books = new ArrayList<>();
         bookRepository.findByAuthorID(authorID).forEach(books::add);
         return books;
+    }
+
+    public void addBook (int bookISBN, String bookName, String bookDesc, int bookPrice, String bookAuthor,
+                         int authorID, String bookGenre, String publisherName, int bookPublishedYear, int bookCopiesSold) {
+        bookRepository.insertBookEntity(bookISBN, bookName, bookDesc, bookPrice, bookAuthor, authorID, bookGenre,
+                publisherName, bookPublishedYear, bookCopiesSold);
     }
 }
