@@ -5,14 +5,14 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collection;
 import java.util.List;
 
 @Repository
 public interface BookRepository extends JpaRepository<Book, String > {
-    List<Book> searchBooks(String query);
-    List<Book> findByGenreIs(String genre);
+    List<Book> findByPublisherID(int publisherID);
+    List<Book> findByBookRating(double bookRating);
+    List<Book> findByBookGenre(String bookGenre);
 
-    List<Book> findByRating(Double rating);
 
-    List<Book> findByPubID(int publisherID);
 }
