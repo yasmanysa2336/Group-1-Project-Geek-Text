@@ -1,24 +1,40 @@
 package com.practice.demo;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name="Book_Information")
 public class BookEntity {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-
+    @Column(name="bookISBN")
     private int bookISBN;
+
+    @Column(name="bookPrice")
     private double bookPrice;
+
+    @Column(name="bookName")
     private String bookName;
+
+    @Column(name="bookDesc")
     private String bookDesc;
+
+    @Column(name="bookAuthor")
     private String bookAuthor;
+
+    @Column(name="bookGenre")
     private String bookGenre;
+
+    @Column(name="bookPublishedYear")
     private int bookPublishedYear;
+
+    @Column(name="publisherName")
     private String publisherName;
+
+    @Column(name="bookCopiesSold")
     private int bookCopiesSold;
+
+    @Column(name="authorID")
     private int authorID;
 
     public BookEntity() {
@@ -97,11 +113,7 @@ public class BookEntity {
         this.bookCopiesSold = bookCopiesSold;
     }
 
-    public int getAuthorID() {
-        return authorID;
-    }
+    public int getAuthorID() { return authorID; }
 
-    public void setAuthorID(int authorID) {
-        this.authorID = authorID;
-    }
+    public void setAuthorID(int authorID) { this.authorID = authorID; }
 }
