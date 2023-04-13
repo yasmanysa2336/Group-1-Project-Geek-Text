@@ -28,8 +28,8 @@ public class BookController {
         return bookRepository.findAll();
     }
 
-    @GetMapping("/browseByGenre")
-    public List<Book> getBookByGenre(@RequestParam String bookGenre){
+    @GetMapping("/browseByGenre/{bookGenre}")
+    public List<Book> getBookByGenre(@PathVariable("bookGenre") String bookGenre){
         List<Book> books = new ArrayList<>();
         books.addAll(bookRepository.findByBookGenre(bookGenre));
         return books;
@@ -43,8 +43,8 @@ public class BookController {
         return books;
     }
 
-    @GetMapping("/browseByRating")
-    public List<Book> browseByRating(@RequestParam Double bookRating) {
+    @GetMapping("/browseByRating/{bookRating}")
+    public List<Book> browseByRating(@PathVariable("bookRating") Double bookRating) {
         List<Book> books = new ArrayList<>();
         for(double i=bookRating; i<=5; i+= 1){
             books.addAll(bookRepository.findByBookRating(i));
@@ -53,7 +53,7 @@ public class BookController {
     }
 
     @GetMapping("/browseByPublisherID")
-    public List<Book> getBookByPublisher(@RequestParam int publisherID){
+    public List<Book> getBookByPublisher(@PathVariable("publisherID") int publisherID){
         List<Book> books = new ArrayList<>();
         books.addAll(bookRepository.findByPublisherID(publisherID));
         return books;
