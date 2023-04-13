@@ -52,7 +52,7 @@ public class BookController {
         return books;
     }
 
-    @GetMapping("/browseByPublisherID")
+    @GetMapping("/browseByPublisherID/{publisherID}")
     public List<Book> getBookByPublisher(@PathVariable("publisherID") int publisherID){
         List<Book> books = new ArrayList<>();
         books.addAll(bookRepository.findByPublisherID(publisherID));
