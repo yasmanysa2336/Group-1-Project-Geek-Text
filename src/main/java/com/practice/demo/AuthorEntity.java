@@ -4,20 +4,35 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Column;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name="Author_Information")
 public class AuthorEntity {
     @Id
+    @Column(name= "author_id")
     @GeneratedValue(strategy=GenerationType.AUTO)
+    private int id;
 
+    @Column(name="authorFirst")
     private String authorFirst;
+
+    @Column(name="authorLast")
     private String authorLast;
+
+    @Column(name="authorBio")
     private String authorBio;
+
+    @Column(name="publisherName")
     private String publisherName;
 
     public AuthorEntity() {
         //empty constructor
     }
+    public int getId() { return id; }
+
+    public void setId(int id) { this.id = id; }
 
     public String getAuthorFirst() {
         return authorFirst;
