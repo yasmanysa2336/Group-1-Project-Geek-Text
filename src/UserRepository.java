@@ -13,15 +13,33 @@ import java.util.List;
 @Repository
 public interface UserRepository extends JpaRepository<User,Integer>, JpaSpecificationExecutor<User> {
 
-    List<User> findUserByUserNameIs(String userName);
+
+
+
+    String findUserByUserNameIs(String userName);
 
     @Transactional
     @Query(value = "INSERT INTO users (userId, userName, userPassword,userEmail,userAddress, userCreditCard)"
-            + "VALUES (:userId, :userName, :userPassword,:userEmail,:userAddress, :userCreditCard)", nativeQuery = true)
+            + "VALUES (:userId, :userName, :userPassword,:userEmail,:userAddress)", nativeQuery = true)
     @Modifying
-    static void insertUser(@Param("userId") Integer userId, @Param("userName") String userName,
+    static void addNewUser(@Param("userId") Integer userId, @Param("userName") String userName,
                            @Param("userPassword") String userPassword,@Param("userEmail") String userEmail,
-                           @Param("userAddress")String userAddress,@Param("userCreditCard") String userCard) {
+                           @Param("userAddress")String userAddress) {
+
+    }
+    @Transactional
+    @Query(value = "UPDATE users (userId, userName, userPassword,userAddress, userCreditCard)"
+            + "SET (:userId, :userName, :userPassword,:userAddress)", nativeQuery = true)
+    static void updateUser(@Param("userId") Integer userId, @Param("userName") String userName,
+                           @Param("userPassword") String userPassword, @Param("userAddress")String userAddress) {
+
+    }
+
+    @Transactional
+    @Query(value = "INSERT INTO users (userCreditCard)"
+            + "VALUES (:userCreditCard)",nativeQuery = true)
+    @Modifying
+    static void addUserCreditCard(@Param("userCreditCard")Integer userCreditCard){
 
     }
 }
